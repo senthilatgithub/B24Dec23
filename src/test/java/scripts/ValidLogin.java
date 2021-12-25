@@ -12,9 +12,10 @@ public class ValidLogin extends BaseTest {
 	
 	@Test(priority = 1,groups={"smoke","login"})
 	public void testValidLogin() {
-		 String un=Excel.getData(XL_PATH, "ValidLogin", 1, 0);
-		 String pw=Excel.getData(XL_PATH, "ValidLogin", 1, 1);
-		 String failMSG=Excel.getData(XL_PATH, "ValidLogin", 1, 2);
+		
+		 String un=Excel.getData(xlfile_path, "ValidLogin", 1, 0);
+		 String pw=Excel.getData(xlfile_path, "ValidLogin", 1, 1);
+		 String failMSG=Excel.getData(xlfile_path, "ValidLogin", 1, 2);
 		 
 //	    1. Enter Valid User Name
 		LoginPage loginPage=new LoginPage(driver);

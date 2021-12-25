@@ -11,9 +11,9 @@ public class InvalidLogin extends BaseTest{
 	@Test(priority = 2,groups={"login"})
 	public void testInvalidLogin() {
 		
-		 String un=Excel.getData(XL_PATH, "InvalidLogin", 1, 0);
-		 String pw=Excel.getData(XL_PATH, "InvalidLogin", 1, 1);
-		 String failMSG=Excel.getData(XL_PATH, "InvalidLogin", 1, 2);
+		 String un=Excel.getData(xlfile_path, "InvalidLogin", 1, 0);
+		 String pw=Excel.getData(xlfile_path, "InvalidLogin", 1, 1);
+		 String failMSG=Excel.getData(xlfile_path, "InvalidLogin", 1, 2);
 		 
 		 
 //		   1. Enter Invalid User Name -abcd
